@@ -48,12 +48,24 @@
     top: 210px;
     left: 11px;
     /*. las 3 luces van en posicion absoluta con respecto a su div padre para poder centrarlas horizontal y verticalmente */
+}
 
+.purple {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: purple;
+    position: absolute;
+    
+    top: 310px;
+    left:11px;
 }
 
 #luces{
     width: 120px;
-    height: 320px;
+    /*height: 320px;*/ /* QUITADA ALTURA PARA PONERLA INLINE PARA PODER CAMBIARLA CON USESTATE*/
     background-color: black;
     border-radius: 15px;
     position: relative;
