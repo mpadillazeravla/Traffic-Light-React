@@ -1,12 +1,88 @@
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+.container , .d-flex{
+    width: 120px;
+  
+}
+
+.iluminado {
+    box-shadow: 0 0 40px 20px rgb(255, 255, 255);
+    animation: glow 3seg linear infinite alternate;
+}
+
+
+.red {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    top: 10px;
+    left:11px;
+   
+}
+
+.yellow {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: orange;
+    position: absolute;
+    top: 110px;
+    left:11px;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+    position: absolute;
+    top: 210px;
+    left: 11px;
+    /*. las 3 luces van en posicion absoluta con respecto a su div padre para poder centrarlas horizontal y verticalmente */
+
+}
+
+#luces{
+    width: 120px;
+    height: 320px;
+    background-color: black;
+    border-radius: 15px;
+    position: relative;
+    /* lleva position relativa para poner a las 3 luces posicion absoluta y ponerlos en la posicion que quiero dentro de este contenedor-*/
+
+    
+}
+
+.wrapperTop{
+    width: 120px;
+    justify-content: center;
+    display: flex;
+}
+
+#top{
+    width: 20px;
+    height: 100px;
+    background-color: black;
+}
+
+body {
+    background-image: url("https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2017/07/formula-1-parrilla-salida-gp-italia-2014_1.jpg?itok=1oOFWoT4");
+    box-sizing: border-box;
+    background-size: cover;
+   /* background-position: center;
+    object-fit: fill;*/
+   
+}
+/*.btn {
+    width: 5rem;
+    height: 5rem;
+}*/
